@@ -350,6 +350,7 @@ def prime_gap(m):
     #    -- Use (call) the   *** next_prime ***   function
     #       (that you implemented) appropriately.
     # -------------------------------------------------------------------------
+    pri1 = 2
 
 
 
