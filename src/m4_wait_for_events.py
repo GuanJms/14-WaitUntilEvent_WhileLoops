@@ -324,7 +324,7 @@ def prime_gap(m):
       -- prime_gap(1) returns 2, because the next prime after 2 is 3,
            and so the gap for 2 is 3 - 2 = 1,
            and 2 is the smallest prime with gap 1.
-      -- prime_gap(2) returns 3, because the next prime after 3 is 5,
+      -- prime_gap(2) returns 3, because the next prime after 3 is 5,]
            and so the gap for 3 is 5 - 3 = 2,
            and 3 is the smallest prime with gap 2.
       -- prime_gap(3) returns 7, because the next prime after 7 is 11,
@@ -343,18 +343,13 @@ def prime_gap(m):
       :type m: int
     """
     # -------------------------------------------------------------------------
-    # Done: 5. Implement and test this function.
+    # TODO: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # IMPLEMENTATION REQUIREMENT:
     #    -- Use (call) the   *** next_prime ***   function
     #       (that you implemented) appropriately.
     # -------------------------------------------------------------------------
-    pri1 = 2
-
-
-
-
 
 
 def run_test_wait_for_sum_of_cubes():
@@ -484,7 +479,7 @@ def wait_for_sum_of_cubes(x):
       :type x: float  [or an int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # DONE: 7. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     # IMPLEMENTATION REQUIREMENT:
@@ -494,6 +489,15 @@ def wait_for_sum_of_cubes(x):
     # (or look up) a formula that would allow a faster computation.
     # But no fair using any such approach in this implementation.
     # -------------------------------------------------------------------------
+    n = 1
+    sum = 0
+    while True:
+        sum = sum + n**3
+        if sum > x:return n
+        n = n + 1
+
+
+
 
 
 # -----------------------------------------------------------------------------
